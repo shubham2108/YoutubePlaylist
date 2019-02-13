@@ -19,4 +19,8 @@ extension UINib {
         return UINib(nibName: Cell.detailCell.rawValue, bundle:nil)
     }
     
+    class func commentCellNib() -> UINib {
+        return UINib(nibName: Cell.commentCell.rawValue, bundle:nil)
+    }
+    
 }

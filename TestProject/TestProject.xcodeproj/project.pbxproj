@@ -34,6 +34,10 @@
 		5161AC502213900600CC3A8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC4F2213900600CC3A8B /* DetailViewController.swift */; };
 		5161AC532213B37F00CC3A8B /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC512213B37F00CC3A8B /* DetailCell.swift */; };
 		5161AC542213B37F00CC3A8B /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5161AC522213B37F00CC3A8B /* DetailCell.xib */; };
+		5161AC5622141C6D00CC3A8B /* ServiceLayerManager+Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC5522141C6D00CC3A8B /* ServiceLayerManager+Comments.swift */; };
+		5161AC5C22141DB100CC3A8B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC5A22141DB100CC3A8B /* CommentCell.swift */; };
+		5161AC5D22141DB100CC3A8B /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5161AC5B22141DB100CC3A8B /* CommentCell.xib */; };
+		5161AC5F2214254D00CC3A8B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC5E2214254D00CC3A8B /* CommentModel.swift */; };
 		6FFF43F1212DB92DF32605FE /* Pods_TestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D963D30F11A5030D616605C6 /* Pods_TestProjectUITests.framework */; };
 		E4879D1DDC357639D6644ED2 /* Pods_TestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE2732366493E10FC78F9EF /* Pods_TestProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +96,10 @@
 		5161AC4F2213900600CC3A8B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5161AC512213B37F00CC3A8B /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		5161AC522213B37F00CC3A8B /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		5161AC5522141C6D00CC3A8B /* ServiceLayerManager+Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceLayerManager+Comments.swift"; sourceTree = "<group>"; };
+		5161AC5A22141DB100CC3A8B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		5161AC5B22141DB100CC3A8B /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		5161AC5E2214254D00CC3A8B /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		7F05D11A49F1359823A53D19 /* Pods-TestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TestProjectTests/Pods-TestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4DE5C2A6EDE82684147DCE /* Pods-TestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TestProjectTests/Pods-TestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3F5C23428193CC705F6EC30 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,9 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				5161ABEA2213376700CC3A8B /* AppDelegate.swift */,
-				5161AC3E2213637300CC3A8B /* Controllers */,
-				5161AC3122135EA300CC3A8B /* Model */,
 				5161AC1C22135DFD00CC3A8B /* Networking */,
+				5161AC3122135EA300CC3A8B /* Model */,
+				5161AC3E2213637300CC3A8B /* Controllers */,
 				5161AC1F22135E6000CC3A8B /* Utility */,
 				5161ABF12213376A00CC3A8B /* Assets.xcassets */,
 				5161ABF32213376A00CC3A8B /* LaunchScreen.storyboard */,
@@ -201,6 +209,7 @@
 				5161AC1D22135E1000CC3A8B /* ServiceLayerManager.swift */,
 				5161AC3A22135FD500CC3A8B /* ServiceLayerManager+Playlist.swift */,
 				5161AC3C22135FF400CC3A8B /* ServiceLayerManager+Videos.swift */,
+				5161AC5522141C6D00CC3A8B /* ServiceLayerManager+Comments.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -208,8 +217,8 @@
 		5161AC1F22135E6000CC3A8B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				5161AC2022135E6000CC3A8B /* Enums.swift */,
 				5161AC2122135E6000CC3A8B /* Constants */,
+				5161AC2022135E6000CC3A8B /* Enums.swift */,
 				5161AC2422135E6000CC3A8B /* UINibExtension.swift */,
 				5161AC2522135E6000CC3A8B /* UIViewController+Alert.swift */,
 				5161AC2622135E6000CC3A8B /* String+Ext.swift */,
@@ -233,6 +242,7 @@
 			children = (
 				5161AC41221366BB00CC3A8B /* ChannelModel.swift */,
 				5161AC43221369B000CC3A8B /* PlayListModel.swift */,
+				5161AC5E2214254D00CC3A8B /* CommentModel.swift */,
 				5161AC3422135EA300CC3A8B /* ErrorModel.swift */,
 			);
 			path = Model;
@@ -242,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				5161AC45221370B100CC3A8B /* ChannelPlayList */,
+				5161AC5722141D3200CC3A8B /* VideoDetail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				5161AC3F221363C300CC3A8B /* PlayListViewController.swift */,
-				5161AC4F2213900600CC3A8B /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,10 +288,36 @@
 			children = (
 				5161AC49221371B100CC3A8B /* PlaylistCell.swift */,
 				5161AC4A221371B100CC3A8B /* PlaylistCell.xib */,
-				5161AC512213B37F00CC3A8B /* DetailCell.swift */,
-				5161AC522213B37F00CC3A8B /* DetailCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5161AC5722141D3200CC3A8B /* VideoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5161AC5822141D5100CC3A8B /* Controller */,
+				5161AC5922141D5E00CC3A8B /* Cell */,
+			);
+			path = VideoDetail;
+			sourceTree = "<group>";
+		};
+		5161AC5822141D5100CC3A8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5161AC4F2213900600CC3A8B /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5161AC5922141D5E00CC3A8B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5161AC512213B37F00CC3A8B /* DetailCell.swift */,
+				5161AC522213B37F00CC3A8B /* DetailCell.xib */,
+				5161AC5A22141DB100CC3A8B /* CommentCell.swift */,
+				5161AC5B22141DB100CC3A8B /* CommentCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CCC4689C372FC67C07B26995 /* Frameworks */ = {
@@ -405,6 +441,7 @@
 				5161ABF52213376A00CC3A8B /* LaunchScreen.storyboard in Resources */,
 				5161AC542213B37F00CC3A8B /* DetailCell.xib in Resources */,
 				5161ABF22213376A00CC3A8B /* Assets.xcassets in Resources */,
+				5161AC5D22141DB100CC3A8B /* CommentCell.xib in Resources */,
 				5161AC4C221371B100CC3A8B /* PlaylistCell.xib in Resources */,
 				5161ABF02213376700CC3A8B /* Main.storyboard in Resources */,
 			);
@@ -529,10 +566,12 @@
 				5161AC42221366BB00CC3A8B /* ChannelModel.swift in Sources */,
 				5161AC1E22135E1000CC3A8B /* ServiceLayerManager.swift in Sources */,
 				5161AC40221363C300CC3A8B /* PlayListViewController.swift in Sources */,
+				5161AC5F2214254D00CC3A8B /* CommentModel.swift in Sources */,
 				5161AC2A22135E6000CC3A8B /* ConstantStrings.swift in Sources */,
 				5161AC3D22135FF400CC3A8B /* ServiceLayerManager+Videos.swift in Sources */,
 				5161AC502213900600CC3A8B /* DetailViewController.swift in Sources */,
 				5161AC4E221379C900CC3A8B /* UIImageView+Ext.swift in Sources */,
+				5161AC5622141C6D00CC3A8B /* ServiceLayerManager+Comments.swift in Sources */,
 				5161AC2922135E6000CC3A8B /* Enums.swift in Sources */,
 				5161ABEB2213376700CC3A8B /* AppDelegate.swift in Sources */,
 				5161AC2B22135E6000CC3A8B /* AppURL.swift in Sources */,
@@ -541,6 +580,7 @@
 				5161AC2D22135E6000CC3A8B /* UIViewController+Alert.swift in Sources */,
 				5161AC532213B37F00CC3A8B /* DetailCell.swift in Sources */,
 				5161AC3B22135FD500CC3A8B /* ServiceLayerManager+Playlist.swift in Sources */,
+				5161AC5C22141DB100CC3A8B /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

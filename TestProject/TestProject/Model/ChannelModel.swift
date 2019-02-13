@@ -8,7 +8,7 @@
 
 import Foundation
 
-//Remedy model to parse remedy info
+//Channel model to parse channel info
 struct ChannelModel: Decodable {
     var pageInfo: PageModel
     var items: [PlayListModel]

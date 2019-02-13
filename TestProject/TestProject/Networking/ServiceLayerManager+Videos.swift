@@ -11,7 +11,7 @@ import Foundation
 extension ServiceLayerManager {
     
     // Playlist API call
-    class func getVideolist(playlistId: String, nextPage: String, completionHandler: @escaping (_ adherences: ChannelModel?, _ error: String?) -> ()) {
+    class func getVideolist(playlistId: String, nextPage: String, completionHandler: @escaping (_ channelModel: ChannelModel?, _ error: String?) -> ()) {
         var url = VIDEO_LIST_URL+playlistId
         if !nextPage.isEmpty {
             url = url+"&pageToken="+nextPage

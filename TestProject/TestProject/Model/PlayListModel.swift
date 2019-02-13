@@ -53,11 +53,12 @@ struct ImageModel: Decodable {
 
 struct ContentDetailModel: Decodable {
     var itemCount: Int?
+    var videoId: String?
     var count: String {
         return "\(itemCount ?? 0)" + " videos"
     }
     
     enum CodingKeys: String, CodingKey {
-        case itemCount
+        case itemCount, videoId
     }
 }

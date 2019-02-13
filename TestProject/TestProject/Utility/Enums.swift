@@ -11,6 +11,7 @@ import Foundation
 enum Cell: String {
     case playlistCell = "PlaylistCell"
     case detailCell = "DetailCell"
+    case commentCell = "CommentCell"
     
     var identifier: String {
         switch self {
@@ -18,6 +19,8 @@ enum Cell: String {
             return "videoCell"
         case .detailCell:
             return "detailCell"
+        case .commentCell:
+            return "commentCell"
         }
     }
 }

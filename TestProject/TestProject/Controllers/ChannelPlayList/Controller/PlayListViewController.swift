@@ -194,7 +194,7 @@ extension PlayListViewController {
             }else {
                 strongSelf.showAlert(message: error ?? "", completionHandler: { (alertAction) in
                     if alertAction.style == .default {
-                        strongSelf.getVideoList(playlistId)
+                        strongSelf.getVideoList(playlistId, nextPage: nextPage)
                     }
                 })
             }

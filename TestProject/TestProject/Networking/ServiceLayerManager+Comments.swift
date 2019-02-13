@@ -1,8 +1,8 @@
 //
-//  ServiceLayerManager+Playlist.swift
+//  ServiceLayerManager+Comments.swift
 //  TestProject
 //
-//  Created by Shubham on 12/02/19.
+//  Created by Shubham on 13/02/19.
 //  Copyright © 2019 PlaySports. All rights reserved.
 //
 
@@ -10,13 +10,16 @@ import Foundation
 
 extension ServiceLayerManager {
     
-    // Playlist API call
-    class func getPlaylist(nextPage: String = "", completionHandler: @escaping (_ channelModel: ChannelModel?, _ error: String?) -> ()) {
-        let url = PLAY_LISTS_URL
+    // Comment list API call
+    class func getCommentList(videoId: String, nextPage: String, completionHandler: @escaping (_ comments: CommentModel?, _ error: String?) -> ()) {
+        var url = COMMENT_LIST_URL+videoId
+        if !nextPage.isEmpty {
+            url = url+"&pageToken="+nextPage
+        }
         request(url, method: .get, parameters: nil, headers: nil) { (responseData, errorString) in
             if let responseData = responseData, let jsonData = responseData.data, responseData.result.isSuccess {
                 do {
-                    let channelModel = try JSONDecoder().decode(ChannelModel.self, from: jsonData)
+                    let channelModel = try JSONDecoder().decode(CommentModel.self, from: jsonData)
                     completionHandler(channelModel, nil)
                 } catch {
                     print(error)
