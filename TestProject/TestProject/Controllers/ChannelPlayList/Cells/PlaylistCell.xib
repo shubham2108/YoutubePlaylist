@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="116" id="KGk-i7-Jjw" customClass="PlaylistCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRV-PW-Gw6">
+                        <rect key="frame" x="8" y="4" width="130" height="107.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="HsT-Ls-cGr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-OM-gw4">
+                        <rect key="frame" x="158" y="37" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzv-pW-mGa">
+                        <rect key="frame" x="158" y="11" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uRV-PW-Gw6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="FYg-uu-ckv"/>
+                    <constraint firstItem="TZC-OM-gw4" firstAttribute="leading" secondItem="uRV-PW-Gw6" secondAttribute="trailing" constant="20" id="J33-x3-3kP"/>
+                    <constraint firstItem="kzv-pW-mGa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Tzx-Kf-86o"/>
+                    <constraint firstItem="kzv-pW-mGa" firstAttribute="leading" secondItem="uRV-PW-Gw6" secondAttribute="trailing" constant="20" id="XRK-00-oqw"/>
+                    <constraint firstItem="uRV-PW-Gw6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Z6l-qo-rnW"/>
+                    <constraint firstItem="TZC-OM-gw4" firstAttribute="top" secondItem="kzv-pW-mGa" secondAttribute="bottom" constant="10" id="mS7-WI-lVD"/>
+                    <constraint firstAttribute="bottom" secondItem="uRV-PW-Gw6" secondAttribute="bottom" constant="4" id="ni3-Gc-xiL"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="kzv-pW-mGa" secondAttribute="trailing" id="v7F-VG-EwM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playlistImage" destination="uRV-PW-Gw6" id="HZV-Ck-hoq"/>
+                <outlet property="title" destination="kzv-pW-mGa" id="UZS-TP-mS3"/>
+                <outlet property="videosCount" destination="TZC-OM-gw4" id="HFT-CZ-bL7"/>
+            </connections>
+            <point key="canvasLocation" x="120.8" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+</document>
