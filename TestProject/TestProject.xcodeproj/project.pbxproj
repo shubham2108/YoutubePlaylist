@@ -14,9 +14,6 @@
 		5161ABF52213376A00CC3A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5161ABF32213376A00CC3A8B /* LaunchScreen.storyboard */; };
 		5161AC002213376A00CC3A8B /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161ABFF2213376A00CC3A8B /* TestProjectTests.swift */; };
 		5161AC0B2213376A00CC3A8B /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC0A2213376A00CC3A8B /* TestProjectUITests.swift */; };
-		5161AC19221337E300CC3A8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5161AC18221337E300CC3A8B /* GoogleService-Info.plist */; };
-		5161AC1A221337E300CC3A8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5161AC18221337E300CC3A8B /* GoogleService-Info.plist */; };
-		5161AC1B221337E300CC3A8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5161AC18221337E300CC3A8B /* GoogleService-Info.plist */; };
 		5161AC1E22135E1000CC3A8B /* ServiceLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC1D22135E1000CC3A8B /* ServiceLayerManager.swift */; };
 		5161AC2922135E6000CC3A8B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC2022135E6000CC3A8B /* Enums.swift */; };
 		5161AC2A22135E6000CC3A8B /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161AC2222135E6000CC3A8B /* ConstantStrings.swift */; };
@@ -75,7 +72,6 @@
 		5161AC062213376A00CC3A8B /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5161AC0A2213376A00CC3A8B /* TestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectUITests.swift; sourceTree = "<group>"; };
 		5161AC0C2213376A00CC3A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5161AC18221337E300CC3A8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5161AC1D22135E1000CC3A8B /* ServiceLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayerManager.swift; sourceTree = "<group>"; };
 		5161AC2022135E6000CC3A8B /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		5161AC2222135E6000CC3A8B /* ConstantStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
@@ -177,7 +173,6 @@
 				5161ABF12213376A00CC3A8B /* Assets.xcassets */,
 				5161ABF32213376A00CC3A8B /* LaunchScreen.storyboard */,
 				5161ABF62213376A00CC3A8B /* Info.plist */,
-				5161AC18221337E300CC3A8B /* GoogleService-Info.plist */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -408,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5161ABF52213376A00CC3A8B /* LaunchScreen.storyboard in Resources */,
-				5161AC19221337E300CC3A8B /* GoogleService-Info.plist in Resources */,
 				5161AC542213B37F00CC3A8B /* DetailCell.xib in Resources */,
 				5161ABF22213376A00CC3A8B /* Assets.xcassets in Resources */,
 				5161AC4C221371B100CC3A8B /* PlaylistCell.xib in Resources */,
@@ -420,7 +414,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5161AC1A221337E300CC3A8B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +421,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5161AC1B221337E300CC3A8B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
